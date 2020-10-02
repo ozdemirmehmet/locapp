@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Mehmet Ozdemir on 9/21/20 4:01 PM
+  ~ Copyright (c) 2020 . All rights reserved.
+  ~ Last modified 9/21/20 4:01 PM
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RoutePreviewFragment">
+
+    <com.huawei.hms.maps.MapView
+        android:id="@+id/map_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        map:mapType="normal"
+        map:uiCompass="false"
+        map:uiZoomControls="false" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_route_preview"
+        android:layout_width="@dimen/size_large"
+        android:layout_height="@dimen/size_large"
+        android:layout_margin="@dimen/margin_container_medium"
+        app:cardCornerRadius="@dimen/size_large"
+        app:cardElevation="@dimen/elevation_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_container_xsmall"
+            android:src="@drawable/icon_route_preview" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/image_button_left_arrow"
+        android:layout_width="@dimen/size_small"
+        android:layout_height="@dimen/size_small"
+        android:layout_marginStart="@dimen/margin_container_xsmall"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_circled_left_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/view_pager_instruction_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_pager_instruction_info" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_instruction_info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_container_xsmall"
+        android:layout_marginEnd="@dimen/margin_container_xsmall"
+        android:layout_marginBottom="@dimen/margin_container_xlarge"
+        android:background="@android:color/transparent"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:padding="@dimen/padding_container_xxsmall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/image_button_right_arrow"
+        app:layout_constraintStart_toEndOf="@id/image_button_left_arrow" />
+
+    <ImageButton
+        android:id="@+id/image_button_right_arrow"
+        android:layout_width="@dimen/size_small"
+        android:layout_height="@dimen/size_small"
+        android:layout_marginEnd="@dimen/margin_container_xsmall"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_circled_right_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/view_pager_instruction_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_pager_instruction_info" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

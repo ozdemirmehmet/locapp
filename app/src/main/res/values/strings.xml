@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">LocAPP</string>
+
+    <string name="huawei_map_services_base_url" translatable="false">https://mapapi.cloud.huawei.com/mapApi/v1/</string>
+
+    <string name="text_list">LIST</string>
+    <string name="text_map">MAP</string>
+    <string name="text_preview">PREVIEW</string>
+    <string name="text_instructions">INSTRUCTIONS</string>
+
+    <string name="text_latitude">Latitude</string>
+    <string name="text_longitude">Longitude</string>
+    <string name="text_view_on_map">View on\nMap</string>
+
+    <string name="text_start_location">Start Location</string>
+    <string name="text_welcome">Welcome</string>
+    <string name="text_venues">Venues</string>
+    <string name="text_route_preview">Route Preview</string>
+    <string name="text_welcome_message">Welcome to %1$s!</string>
+    <string name="text_good_bye_message">Good Bye! Have a nice day.</string>
+    <string name="text_login_info">Login info: %1$s</string>
+
+    <string name="text_button_sign_in_with_huawei">Sign in with Huawei ID</string>
+
+    <string name="text_toast_location_permissions">Please provide location permissions to use application.</string>
+    <string name="text_toast_unexpected_error">An unexpected error has occurred. Please try again.</string>
+    <string name="text_toast_no_route">We could not find a route to go venue you selected. Please try again.</string>
+
+    <string name="text_dialog_title_location_permissions">Location Permissions</string>
+    <string name="text_dialog_message_location_permissions">Please provide location permissions from application settings screen to use application.</string>
+    <string name="text_dialog_title_log_out">Log out</string>
+    <string name="text_dialog_message_log_out">You logged in with "%1$s". Do you want to log out?</string>
+
+    <string name="text_dialog_button_go_settings">Go Settings</string>
+    <string name="text_dialog_button_exit">Exit</string>
+    <string name="text_dialog_button_yes">Yes</string>
+    <string name="text_dialog_button_no">No</string>
+
+</resources>

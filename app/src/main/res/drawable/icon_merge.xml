@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Mehmet Ozdemir on 9/24/20 10:09 AM
+  ~ Copyright (c) 2020 . All rights reserved.
+  ~ Last modified 9/24/20 10:09 AM
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="503.28"
+    android:viewportHeight="503.28">
+
+    <path
+        android:fillColor="#000000"
+        android:pathData="M 123.64 471.28 H 155.64 V 503.28 H 123.64 V 471.28 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M 123.64 407.28 H 155.64 V 439.28 H 123.64 V 407.28 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M 347.64 471.28 H 379.64 V 503.28 H 347.64 V 471.28 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M 347.64 407.28 H 379.64 V 439.28 H 347.64 V 407.28 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M 267.64 208.928 L 267.64 61.12 L 304.152 98 L 326.904 75.488 L 252.168 0 L 177.448 75.488 L 200.2 98 L 235.64 62.192 L 235.64 208.928 L 123.64 304.928 L 123.64 375.28 L 155.64 375.28 L 155.64 319.648 L 251.64 237.36 L 347.64 319.648 L 347.64 375.28 L 379.64 375.28 L 379.64 304.928 Z" />
+</vector>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F4B266</color>
+    <color name="colorPrimaryDark">#EFA05E</color>
+    <color name="colorAccent">#80C4F1</color>
+
+    <color name="color_gray">#CCC</color>
+
+    <color name="color_huawei_red">#EF484B</color>
+
+    <color name="color_gradient_1_light">#6AE6CE</color>
+    <color name="color_gradient_1_dark">#68E0BA</color>
+    <color name="color_gradient_2_light">#CA79F1</color>
+    <color name="color_gradient_2_dark">#987FF4</color>
+    <color name="color_gradient_3_light">#EC6792</color>
+    <color name="color_gradient_3_dark">#F45375</color>
+    <color name="color_gradient_4_light">#F4B266</color>
+    <color name="color_gradient_4_dark">#EFA05E</color>
+    <color name="color_gradient_5_light">#80C4F1</color>
+    <color name="color_gradient_5_dark">#7DA2F3</color>
+
+</resources>

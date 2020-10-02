@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Mehmet Ozdemir on 9/2/20 5:00 PM
+  ~ Copyright (c) 2020 . All rights reserved.
+  ~ Last modified 9/2/20 5:00 PM
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512.528dp"
+    android:height="512.528dp"
+    android:viewportWidth="512.528"
+    android:viewportHeight="512.528">
+
+    <path
+        android:fillColor="@color/color_gradient_1_dark"
+        android:pathData="M397.344 512.277v-418.909h35.004v-30h-62.837v137.375h-226.494v-137.375h-62.836v30h35.003v418.909h66.302v-129.51h150.008v129.51zm-185.859-156.505h-30v-30.002h30zm0-50.003h-30v-30.002h30zm0-50.003h-30v-30.002h30zm60.004 100.006h-30v-30.002h30zm0-50.003h-30v-30.002h30zm0-50.003h-30v-30.002h30zm60.004 100.006h-30v-30.002h30zm0-50.003h-30v-30.002h30zm0-50.003h-30v-30.002h30z" />
+    <path
+        android:fillColor="@color/color_gradient_1_dark"
+        android:pathData="M512.528 123.372h-85.183v388.906h85.183zm-27.59 312.405h-30v-30.002h30zm0-50.003h-30v-30.002h30zm0-50.003h-30v-30.002h30zm0-50.003h-30v-30.002h30zm0-50.003h-30v-30.002h30z" />
+    <path
+        android:fillColor="@color/color_gradient_1_dark"
+        android:pathData="M271.489 412.767h30.004v99.51h-30.004z" />
+    <path
+        android:fillColor="@color/color_gradient_1_dark"
+        android:pathData="M0 123.372v388.906h85.182v-388.906zm57.59 312.405h-30v-30.002h30zm0-50.003h-30v-30.002h30zm0-50.003h-30v-30.002h30zm0-50.003h-30v-30.002h30zm-30-50.003v-30.002h30v30.002z" />
+    <path
+        android:fillColor="@color/color_gradient_1_dark"
+        android:pathData="M211.485 412.767h30.004v99.51h-30.004z" />
+    <path
+        android:fillColor="@color/color_gradient_1_dark"
+        android:pathData="M173.017 170.744h166.494v-170.493h-166.494zm71.245-118.577v23.33h24.003v-23.33h30v76.66h-30v-23.33h-24.003v23.33h-30v-76.66z" />
+</vector>

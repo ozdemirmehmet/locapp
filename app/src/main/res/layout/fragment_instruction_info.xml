@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Mehmet Ozdemir on 9/1/20 10:46 AM
+  ~ Copyright (c) 2020 . All rights reserved.
+  ~ Last modified 9/1/20 10:46 AM
+  -->
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_container_xxsmall"
+    app:cardCornerRadius="@dimen/radius_medium"
+    app:cardElevation="@dimen/elevation_small"
+    tools:context=".fragments.InstructionInfoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_instruction_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_container_medium">
+
+        <ImageView
+            android:id="@+id/image_view_instruction_action"
+            android:layout_width="@dimen/size_medium"
+            android:layout_height="@dimen/size_medium"
+            android:padding="@dimen/padding_container_xxsmall"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.likapalab.locapp.widgets.LikapalabTextView
+            android:id="@+id/text_view_instruction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_container_medium"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="Go straight 2 meters"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image_view_instruction_action"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.likapalab.locapp.widgets.LikapalabTextView
+            android:id="@+id/text_view_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 min"
+            android:textSize="@dimen/text_size_xsmall"
+            app:layout_constraintStart_toStartOf="@id/text_view_instruction"
+            app:layout_constraintTop_toBottomOf="@id/text_view_instruction" />
+
+        <com.likapalab.locapp.widgets.LikapalabTextView
+            android:id="@+id/text_view_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:textSize="@dimen/text_size_xsmall"
+            app:layout_constraintStart_toEndOf="@id/text_view_duration"
+            app:layout_constraintTop_toTopOf="@id/text_view_duration" />
+
+        <com.likapalab.locapp.widgets.LikapalabTextView
+            android:id="@+id/text_view_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200 m"
+            android:textSize="@dimen/text_size_xsmall"
+            app:layout_constraintStart_toEndOf="@id/text_view_separator"
+            app:layout_constraintTop_toTopOf="@id/text_view_duration" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

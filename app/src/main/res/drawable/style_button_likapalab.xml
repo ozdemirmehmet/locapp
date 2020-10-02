@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Mehmet Ozdemir on 9/7/20 11:49 AM
+  ~ Copyright (c) 2020 . All rights reserved.
+  ~ Last modified 9/7/20 11:49 AM
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/color_huawei_red" />
+    <corners android:radius="@dimen/radius_large" />
+    <padding
+        android:bottom="@dimen/padding_container_small"
+        android:left="@dimen/padding_container_large"
+        android:right="@dimen/padding_container_large"
+        android:top="@dimen/padding_container_small" />
+</shape>

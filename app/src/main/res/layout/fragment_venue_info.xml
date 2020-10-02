@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Mehmet Ozdemir on 9/1/20 10:46 AM
+  ~ Copyright (c) 2020 . All rights reserved.
+  ~ Last modified 9/1/20 10:46 AM
+  -->
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_container_xxsmall"
+    app:cardCornerRadius="@dimen/radius_medium"
+    app:cardElevation="@dimen/elevation_small"
+    tools:context=".fragments.VenueInfoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_venue_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background_shopping"
+        android:padding="@dimen/padding_container_small">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_venue_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/size_small"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/image_view_venue_icon"
+                android:layout_width="@dimen/size_xsmall"
+                android:layout_height="@dimen/size_xsmall"
+                android:layout_margin="@dimen/margin_container_small"
+                android:src="@drawable/icon_shopping" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view_name_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_container_xsmall"
+            app:layout_constraintBottom_toBottomOf="@id/card_view_venue_category"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/card_view_venue_category"
+            app:layout_constraintTop_toTopOf="@id/card_view_venue_category">
+
+            <com.likapalab.locapp.widgets.LikapalabTextView
+                android:id="@+id/text_view_venue_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="Venue Name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.likapalab.locapp.widgets.LikapalabTextView
+                android:id="@+id/text_view_venue_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:maxLines="2"
+                android:text="Venue description"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_xxsmall"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_venue_name" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view_location_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_container_xxsmall"
+            app:layout_constraintEnd_toEndOf="@id/view_name_area"
+            app:layout_constraintStart_toStartOf="@id/view_name_area"
+            app:layout_constraintTop_toBottomOf="@id/card_view_venue_category">
+
+            <com.likapalab.locapp.widgets.LikapalabTextView
+                android:id="@+id/text_view_lat_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_latitude"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_xsmall"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.likapalab.locapp.widgets.LikapalabTextView
+                android:id="@+id/text_view_lat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21312312342432412"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_xxxsmall"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_lat_title" />
+
+            <com.likapalab.locapp.widgets.LikapalabTextView
+                android:id="@+id/text_view_lon_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_container_large"
+                android:text="@string/text_longitude"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_xsmall"
+                app:layout_constraintStart_toEndOf="@id/text_view_lat_title"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.likapalab.locapp.widgets.LikapalabTextView
+                android:id="@+id/text_view_lon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21312312342432412"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_xxxsmall"
+                app:layout_constraintStart_toStartOf="@id/text_view_lon_title"
+                app:layout_constraintTop_toBottomOf="@id/text_view_lon_title" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.likapalab.locapp.widgets.LikapalabButton
+            android:id="@+id/button_route_preview"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_xmedium"
+            android:layout_marginTop="@dimen/margin_container_small"
+            android:background="@drawable/style_button_likapalab_white"
+            android:gravity="center"
+            android:text="@string/text_route_preview"
+            android:textAllCaps="false"
+            android:textColor="@color/color_gradient_3_dark"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/view_name_area"
+            app:layout_constraintStart_toStartOf="@id/view_name_area"
+            app:layout_constraintTop_toBottomOf="@id/view_location_area" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
